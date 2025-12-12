@@ -25,7 +25,7 @@
 
 <div>
   <p align="left">
-    <a href="https://www.linkedin.com/in/md-sabbir-ahmed/" target="_blank"><img src="https://skillicons.dev/icons?i=linkedin" alt="Md Sabbir Ahmed" height="30" width="40" /></a>
+    <a href="https://www.linkedin.com/in/md-sabbir-ahmed/" target="_blank"><img src="https://skillicons.dev/icons?i=linkedin" alt="Sabbir-Aahmed" height="30" width="40" /></a>
     
   </p>
 </div>
@@ -71,7 +71,7 @@
 | ------------- | ------------- |
 
 ### Repository Stats & Streak:
-| <a><img align="center" src="https://github-contributor-stats.vercel.app/api?username=touhidcodes&limit=5&theme=swift&combine_all_yearly_contributions=true&hide_border=true" /></a> | <a><img align="center" src="https://streak-stats.demolab.com/?user=touhidcodes" /></a> |
+| <a><img align="center" src="https://github-contributor-stats.vercel.app/api?username=Sabbir-Aahmed&limit=5&theme=swift&combine_all_yearly_contributions=true&hide_border=true" /></a> | <a><img align="center" src="https://streak-stats.demolab.com/?user=Sabbir-Aahmed" /></a> |
 | ------------- | ------------- |
 
 <br/>
