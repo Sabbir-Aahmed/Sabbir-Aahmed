@@ -63,8 +63,7 @@
 ## <img src="https://media1.giphy.com/media/TJP7EH5i1fB2rKeWbf/giphy.webp" width="30"><b> GITHUB STATISTICS & ANALYSIS:</b>
 
 ### GitHub Contributions:
-<img alt="Contribution Snake" src="https://raw.githubusercontent.com/Sabbir-Aahmed/Sabbir-Aahmed/output/dist/github-contribution-grid-snake.svg" />
-
+![Snake Grid](https://sabbir-aahmed.github.io/Sabbir-Aahmed/github-contribution-grid-snake.svg)
 
 
 ### GitHub Statistics:
