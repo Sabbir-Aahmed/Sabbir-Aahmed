@@ -6,21 +6,37 @@ on:
   pull_request:
     branches: [ "main" ]
   schedule:
-    - cron: '0 07 * * *'
+    - cron: '0 07 * * *'   # runs at 07:00 UTC (GitHub Actions runner uses UTC)
+
+permissions:
+  contents: write   # allow pushing to the output branch using GITHUB_TOKEN
 
 jobs:
 
-# add Snake Animation
+  # add Snake Animation
   snake:
     runs-on: ubuntu-latest
 
     steps:
-      - name: generate github-contribution-grid-snake.svg
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: generate github-contribution-grid-snake.svg (default palette)
         uses: Platane/snk/svg-only@v3
         with:
-          github_user_name: Sabbir-Aahmed
+          github_user_name: Sabbir-Ahmed
           outputs: |
             dist/github-contribution-grid-snake.svg
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: generate github-contribution-grid-snake-dark.svg (github-dark palette)
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: Sabbir-Ahmed
+          # The action supports passing a palette by appending '?palette=...' to the output file.
+          # To keep things explicit we call the action twice with different outputs.
+          outputs: |
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -30,25 +46,28 @@ jobs:
         with:
           target_branch: output
           build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
 
-#  add wakatime on readme
+  # add wakatime on readme
   wakatime:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Set up Python 3.10
-      uses: actions/setup-python@v3
-      with:
-        python-version: "3.10"
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        if [ -f WAKATIME/requirements.txt ]; then pip install -r WAKATIME/requirements.txt; fi
-    - name: run python
-      run: |
-        python WAKATIME/main.py
-      env : 
-        WAKATIME_API_KEY : ${{ secrets.WAKATIME_API_KEY }}
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f WAKATIME/requirements.txt ]; then pip install -r WAKATIME/requirements.txt; fi
+
+      - name: run python
+        run: |
+          python WAKATIME/main.py
+        env:
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
