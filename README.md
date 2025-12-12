@@ -71,7 +71,7 @@
 | ------------- | ------------- |
 
 ### Repository Stats & Streak:
-| <a><img align="center" src="https://github-contributor-stats.vercel.app/api?username=Sabbir-Aahmed&limit=5&theme=swift&combine_all_yearly_contributions=true&hide_border=true" /></a> | <a><img alt="GitHub Streak" src="https://raw.githubusercontent.com/Sabbir-Aahmed/Sabbir-Aahmed/main/assets/streak.svg" /></a> |
+| <a><img align="center" src="https://github-contributor-stats.vercel.app/api?username=Sabbir-Aahmed&limit=5&theme=swift&combine_all_yearly_contributions=true&hide_border=true" /></a> | <a><img src="https://img.shields.io/badge/Streak-Unavailable-orange?style=for-the-badge" /></a> |
 | ------------- | ------------- |
 
 
