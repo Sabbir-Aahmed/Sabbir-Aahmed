@@ -42,7 +42,7 @@
 [![CSS Frameworks & Libraries](https://skillicons.dev/icons?i=tailwind,bootstrap)](https://github.com/Sabbir-Aahmed)
 
 ### JavaScript Frameworks & Libraries:
-[![JavaScript Frameworks & Libraries](https://skillicons.dev/icons?i=react,next,redux)](https://github.com/Sabbir-Aahmed)
+[![JavaScript Frameworks & Libraries](https://skillicons.dev/icons?i=react,redux)](https://github.com/Sabbir-Aahmed)
 
 ### Python Frameworks & Libraries:
 [![Python Frameworks & Libraries](https://skillicons.dev/icons?i=django)](https://github.com/Sabbir-Aahmed)
@@ -71,7 +71,7 @@
 | ------------- | ------------- |
 
 ### Repository Stats & Streak:
-| <a><img align="center" src="https://github-contributor-stats.vercel.app/api?username=Sabbir-Aahmed&limit=5&theme=swift&combine_all_yearly_contributions=true&hide_border=true" /></a> | <a><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=Sabbir-Aahmed&theme=swift&hide_border=true" /></a> |
+| <a><img align="center" src="https://github-contributor-stats.vercel.app/api?username=Sabbir-Aahmed&limit=5&theme=swift&combine_all_yearly_contributions=true&hide_border=true" /></a> | <a><img alt="GitHub Streak" src="https://raw.githubusercontent.com/Sabbir-Aahmed/Sabbir-Aahmed/main/assets/streak.svg" /></a> |
 | ------------- | ------------- |
 
 
